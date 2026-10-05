@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef4f4">
+  <title>Sudoku Studio — Play & Solve</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Sudoku Studio home"><span class="brand-mark" aria-hidden="true">✦</span><span>Sudoku<span class="brand-light">Studio</span></span></a>
+      <span class="topbar-tag">A little clarity, one square at a time</span>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">THE EVERYDAY BRAIN BREAK</p>
+      <h1 id="page-title">Find your <em>flow.</em></h1>
+      <p>Play a fresh puzzle, enter one of your own, or let the solver show the way.</p>
+    </section>
+
+    <div class="layout">
+      <section class="board-card" aria-label="Sudoku puzzle">
+        <div class="board-heading"><div><p class="section-kicker">YOUR PUZZLE</p><h2>Make your next move</h2></div><span class="board-badge" id="board-badge">Medium</span></div>
+        <div class="board-frame"><div id="board" class="board" role="grid" aria-label="Sudoku board"><span class="cell given" role="gridcell" aria-label="Row 1, column 1, 5">5</span><span class="cell given" role="gridcell" aria-label="Row 1, column 2, 3">3</span><span class="cell box-right" role="gridcell" aria-label="Row 1, column 3"></span><span class="cell" role="gridcell" aria-label="Row 1, column 4"></span><span class="cell given" role="gridcell" aria-label="Row 1, column 5, 7">7</span><span class="cell box-right" role="gridcell" aria-label="Row 1, column 6"></span><span class="cell" role="gridcell" aria-label="Row 1, column 7"></span><span class="cell" role="gridcell" aria-label="Row 1, column 8"></span><span class="cell" role="gridcell" aria-label="Row 1, column 9"></span><span class="cell given" role="gridcell" aria-label="Row 2, column 1, 6">6</span><span class="cell" role="gridcell" aria-label="Row 2, column 2"></span><span class="cell box-right" role="gridcell" aria-label="Row 2, column 3"></span><span class="cell given" role="gridcell" aria-label="Row 2, column 4, 1">1</span><span class="cell given" role="gridcell" aria-label="Row 2, column 5, 9">9</span><span class="cell given box-right" role="gridcell" aria-label="Row 2, column 6, 5">5</span><span class="cell" role="gridcell" aria-label="Row 2, column 7"></span><span class="cell" role="gridcell" aria-label="Row 2, column 8"></span><span class="cell" role="gridcell" aria-label="Row 2, column 9"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 3, column 1"></span><span class="cell given box-bottom" role="gridcell" aria-label="Row 3, column 2, 9">9</span><span class="cell given box-right box-bottom" role="gridcell" aria-label="Row 3, column 3, 8">8</span><span class="cell box-bottom" role="gridcell" aria-label="Row 3, column 4"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 3, column 5"></span><span class="cell box-right box-bottom" role="gridcell" aria-label="Row 3, column 6"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 3, column 7"></span><span class="cell given box-bottom" role="gridcell" aria-label="Row 3, column 8, 6">6</span><span class="cell box-bottom" role="gridcell" aria-label="Row 3, column 9"></span><span class="cell given" role="gridcell" aria-label="Row 4, column 1, 8">8</span><span class="cell" role="gridcell" aria-label="Row 4, column 2"></span><span class="cell box-right" role="gridcell" aria-label="Row 4, column 3"></span><span class="cell" role="gridcell" aria-label="Row 4, column 4"></span><span class="cell given" role="gridcell" aria-label="Row 4, column 5, 6">6</span><span class="cell box-right" role="gridcell" aria-label="Row 4, column 6"></span><span class="cell" role="gridcell" aria-label="Row 4, column 7"></span><span class="cell" role="gridcell" aria-label="Row 4, column 8"></span><span class="cell given" role="gridcell" aria-label="Row 4, column 9, 3">3</span><span class="cell given" role="gridcell" aria-label="Row 5, column 1, 4">4</span><span class="cell" role="gridcell" aria-label="Row 5, column 2"></span><span class="cell box-right" role="gridcell" aria-label="Row 5, column 3"></span><span class="cell given" role="gridcell" aria-label="Row 5, column 4, 8">8</span><span class="cell" role="gridcell" aria-label="Row 5, column 5"></span><span class="cell given box-right" role="gridcell" aria-label="Row 5, column 6, 3">3</span><span class="cell" role="gridcell" aria-label="Row 5, column 7"></span><span class="cell" role="gridcell" aria-label="Row 5, column 8"></span><span class="cell given" role="gridcell" aria-label="Row 5, column 9, 1">1</span><span class="cell given box-bottom" role="gridcell" aria-label="Row 6, column 1, 7">7</span><span class="cell box-bottom" role="gridcell" aria-label="Row 6, column 2"></span><span class="cell box-right box-bottom" role="gridcell" aria-label="Row 6, column 3"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 6, column 4"></span><span class="cell given box-bottom" role="gridcell" aria-label="Row 6, column 5, 2">2</span><span class="cell box-right box-bottom" role="gridcell" aria-label="Row 6, column 6"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 6, column 7"></span><span class="cell box-bottom" role="gridcell" aria-label="Row 6, column 8"></span><span class="cell given box-bottom" role="gridcell" aria-label="Row 6, column 9, 6">6</span><span class="cell" role="gridcell" aria-label="Row 7, column 1"></span><span class="cell given" role="gridcell" aria-label="Row 7, column 2, 6">6</span><span class="cell box-right" role="gridcell" aria-label="Row 7, column 3"></span><span class="cell" role="gridcell" aria-label="Row 7, column 4"></span><span class="cell" role="gridcell" aria-label="Row 7, column 5"></span><span class="cell box-right" role="gridcell" aria-label="Row 7, column 6"></span><span class="cell given" role="gridcell" aria-label="Row 7, column 7, 2">2</span><span class="cell given" role="gridcell" aria-label="Row 7, column 8, 8">8</span><span class="cell" role="gridcell" aria-label="Row 7, column 9"></span><span class="cell" role="gridcell" aria-label="Row 8, column 1"></span><span class="cell" role="gridcell" aria-label="Row 8, column 2"></span><span class="cell box-right" role="gridcell" aria-label="Row 8, column 3"></span><span class="cell given" role="gridcell" aria-label="Row 8, column 4, 4">4</span><span class="cell given" role="gridcell" aria-label="Row 8, column 5, 1">1</span><span class="cell given box-right" role="gridcell" aria-label="Row 8, column 6, 9">9</span><span class="cell" role="gridcell" aria-label="Row 8, column 7"></span><span class="cell" role="gridcell" aria-label="Row 8, column 8"></span><span class="cell given" role="gridcell" aria-label="Row 8, column 9, 5">5</span><span class="cell" role="gridcell" aria-label="Row 9, column 1"></span><span class="cell" role="gridcell" aria-label="Row 9, column 2"></span><span class="cell box-right" role="gridcell" aria-label="Row 9, column 3"></span><span class="cell" role="gridcell" aria-label="Row 9, column 4"></span><span class="cell given" role="gridcell" aria-label="Row 9, column 5, 8">8</span><span class="cell box-right" role="gridcell" aria-label="Row 9, column 6"></span><span class="cell" role="gridcell" aria-label="Row 9, column 7"></span><span class="cell given" role="gridcell" aria-label="Row 9, column 8, 7">7</span><span class="cell given" role="gridcell" aria-label="Row 9, column 9, 9">9</span></div></div>
+        <p id="status" class="status" role="status" aria-live="polite">Select a square, then type a number from 1 to 9.</p>
+        <p id="script-note" class="script-note">If the controls do not respond, open this file directly in Chrome or Edge to play.</p>
+        <div class="number-pad" aria-label="Number input">
+          <button type="button" data-number="1">1</button><button type="button" data-number="2">2</button><button type="button" data-number="3">3</button><button type="button" data-number="4">4</button><button type="button" data-number="5">5</button><button type="button" data-number="6">6</button><button type="button" data-number="7">7</button><button type="button" data-number="8">8</button><button type="button" data-number="9">9</button>
+        </div>
+      </section>
+
+      <aside class="sidebar" aria-label="Puzzle controls">
+        <section class="control-card">
+          <p class="section-kicker">START FRESH</p><h2>Choose your challenge</h2><p class="card-description">Every board has a unique solution.</p>
+          <label class="field-label" for="difficulty">Difficulty</label>
+          <select id="difficulty"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option></select>
+          <button id="new-game" class="button button-dark" type="button"><span aria-hidden="true">↻</span> New puzzle</button>
+        </section>
+        <section class="control-card">
+          <p class="section-kicker">YOUR TOOLKIT</p><h2>Take control</h2>
+          <div class="action-list">
+            <button id="solve" class="button button-accent" type="button"><span aria-hidden="true">✦</span> Solve puzzle</button>
+            <button id="reset" class="button button-outline" type="button"><span aria-hidden="true">↩</span> Reset entries</button>
+            <button id="clear" class="button button-outline" type="button"><span aria-hidden="true">⌫</span> Blank board</button>
+          </div>
+        </section>
+        <section class="tip-card"><span class="tip-icon" aria-hidden="true">⌘</span><div><strong>Quick tip</strong><p>Use arrow keys to move, 1–9 to fill a square, and Backspace or Delete to erase it. Red squares show rule conflicts.</p></div></section>
+      </aside>
+    </div>
+    <footer>Made for curious minds <span aria-hidden="true">✦</span> Take your time.</footer>
+  </main>
+  <script src="sudoku.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
