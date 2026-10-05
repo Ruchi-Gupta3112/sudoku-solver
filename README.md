@@ -15,4 +15,4 @@ Open `index.html` in a modern browser. No installation or server is needed.
 - Select **Reset entries** to return to the starting puzzle.
 - Select **Blank board** to enter a puzzle of your own, then solve it.
 
-All puzzle generation and solving happens locally in your browser.
+
